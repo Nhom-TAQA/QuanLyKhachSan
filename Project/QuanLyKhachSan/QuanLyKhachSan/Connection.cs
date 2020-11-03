@@ -123,15 +123,7 @@ namespace QuanLyKhachSan
 
         public DataTable FindObject(string core, string part)
         {
-            if (TryConnect())
-            {
-                com = new SqlCommand("FindObject", con);
-                com.CommandType = CommandType.StoredProcedure;
-                com.Parameters.AddWithValue("@core", core);
-                com.Parameters.AddWithValue("@Part", part);
-                da = new SqlDataAdapter(com);
-                table = new DataTable();
-                da.Fill(table);
+          
             }
             CloseConnect();
             return table;
