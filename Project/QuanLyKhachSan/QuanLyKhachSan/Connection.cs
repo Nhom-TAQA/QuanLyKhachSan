@@ -88,7 +88,17 @@ namespace QuanLyKhachSan
             bool check = false;
             if (TryConnect())
             {
-               
+                com = new SqlCommand(path, con);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@core", core);
+                com.Parameters.AddWithValue("@ID1", id1);
+                com.Parameters.AddWithValue("@ID2", id2);
+                com.Parameters.AddWithValue("@String", string1);
+                com.Parameters.AddWithValue("@Date1", Convert.ToDateTime(date1));
+                com.Parameters.AddWithValue("@Date2", Convert.ToDateTime(date2));
+                com.Parameters.AddWithValue("@Num", num);
+                com.ExecuteNonQuery();
+                check = true;
             }
             CloseConnect();
             return check;
