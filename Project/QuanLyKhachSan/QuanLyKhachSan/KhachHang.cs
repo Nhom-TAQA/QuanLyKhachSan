@@ -12,7 +12,14 @@ namespace QuanLyKhachSan
 {
     public partial class KhachHang : Form
     {
-        
+        public KhachHang()
+        {
+            InitializeComponent();
+        }
+
+        private void FormKhachHang_Load(object sender, EventArgs e)
+        {
+            reset();
         }
 
         private DataTable table;
