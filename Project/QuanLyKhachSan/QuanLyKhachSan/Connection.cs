@@ -57,7 +57,16 @@ namespace QuanLyKhachSan
 
         public DataTable LoadData(string i)
         {
-            
+            if (TryConnect())
+            {
+                com = new SqlCommand("OutputTable " + i, con);
+                com.CommandType = CommandType.Text;
+                da = new SqlDataAdapter(com);
+                table = new DataTable();
+                da.Fill(table);
+            }
+            CloseConnect();
+            return table;
         }
 
         public bool Auto()
