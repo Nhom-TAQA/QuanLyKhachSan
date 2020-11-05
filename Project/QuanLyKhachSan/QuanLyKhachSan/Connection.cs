@@ -12,11 +12,7 @@ namespace QuanLyKhachSan
 {
     class Connection
     {
-        private string str = ConfigurationManager.ConnectionStrings["Conn"].ToString();
-        private SqlConnection con;
-        private SqlDataAdapter da;
-        private DataTable table;
-        private SqlCommand com;
+        
 
         public Connection()
         {
