@@ -12,7 +12,11 @@ namespace QuanLyKhachSan
 {
     class Connection
     {
-        
+        private string str = "Data Source=DESKTOP-70S3NIC\\SQLEXPRESS;Initial Catalog=QUAN_LY_KHACH_SAN;Integrated Security=True";
+        private SqlConnection con;
+        private SqlDataAdapter da;
+        private DataTable table;
+        private SqlCommand com;
 
         public Connection()
         {
