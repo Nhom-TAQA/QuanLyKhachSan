@@ -41,7 +41,15 @@ namespace QuanLyKhachSan
 
         private void reset2()
         {
-            
+            listView1.Items.Clear();
+            table = connector.FindObject("1", textSearch.Text.Trim());
+            int i = 0;
+            foreach (DataRow row in table.Rows)
+            {
+                listView1.Items.Add(row[0].ToString());
+                listView1.Items[i].SubItems.Add(row[1].ToString());
+                i++;
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
