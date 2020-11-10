@@ -54,14 +54,7 @@ namespace QuanLyKhachSan
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
-            {
-                int index = listView1.SelectedItems[0].Index;
-                textID.Text = table.Rows[index][0].ToString();
-                textName.Text = table.Rows[index][1].ToString();
-                textCMND.Text = table.Rows[index][2].ToString();
-                textPhone.Text = table.Rows[index][3].ToString();
-            }
+            if 
         }
 
         private void radView_CheckedChanged(object sender, EventArgs e)
