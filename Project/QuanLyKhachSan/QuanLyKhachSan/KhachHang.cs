@@ -66,15 +66,6 @@ namespace QuanLyKhachSan
 
         private void radView_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton rad = (RadioButton)(sender);
-            if (rad.Checked == true)
-            {
-                butFree.Text = rad.Text;
-                if (rad.Text == "Xem")
-                {
-                    butFree.Enabled = false;
-                    textCMND.ReadOnly = textName.ReadOnly = textID.ReadOnly = textPhone.ReadOnly = true;
-                }
                 else
                 {
                     butFree.Enabled = true;
