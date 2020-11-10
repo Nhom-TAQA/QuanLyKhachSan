@@ -106,16 +106,7 @@ namespace QuanLyKhachSan
 
         private void butSearch_Click(object sender, EventArgs e)
         {
-            if (butSearch.Text.Trim() == "Tìm")
-            {
-                if (textSearch.Text.Trim() == "")
-                {
-                    MessageBox.Show("Nhập thông tin cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textSearch.Focus();
-                    return;
-                }
-                butSearch.Text = "Hủy";
-                reset2();
+            i
             }
             else
             {
