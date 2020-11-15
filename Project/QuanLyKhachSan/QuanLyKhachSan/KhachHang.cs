@@ -173,13 +173,7 @@ namespace QuanLyKhachSan
 
         private void butFree_Click(object sender, EventArgs e)
         {
-            if (butFree.Text == "Thêm")
-            {
-                if (check(1) == false) return;
-                connector.InsertUpdateObject("AddObject", "1", textID.Text, textCMND.Text, textName.Text, "1/1/1994", "1/1/1994", textPhone.Text);
-                MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
+            
             {
                 if (check(2) == false) return;
                 connector.InsertUpdateObject("EditObject", "1", textID.Text, textCMND.Text, textName.Text, "1/1/1994", "1/1/1994", textPhone.Text);
