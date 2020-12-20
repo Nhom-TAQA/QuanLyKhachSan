@@ -44,7 +44,6 @@
             this.Name = "Phong";
             this.Text = "Phòng";
             this.Load += new System.EventHandler(this.FormPhong_Load);
-            
             this.ResumeLayout(false);
 
         }
