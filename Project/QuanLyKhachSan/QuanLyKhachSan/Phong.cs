@@ -17,7 +17,10 @@ namespace QuanLyKhachSan
             InitializeComponent();
         }
 
-       
+       private void FormPhong_Load(object sender, EventArgs e)
+        {
+            reset();
+        }
 
         private DataTable table;
         private Connection connector = new Connection();
@@ -31,10 +34,7 @@ namespace QuanLyKhachSan
         {
            
         }
-	private void FormPhong_Load(object sender, EventArgs e)
-        {
-            reset();
-        }
+	
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
            
