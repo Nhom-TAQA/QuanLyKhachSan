@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Phong));
             
-
             //lam ve Phong
             
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
