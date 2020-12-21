@@ -149,7 +149,12 @@ namespace QuanLyKhachSan
                 textName.Focus();
                 return false;
             }
-            i
+            if (textCMND.Text.Trim() == "")
+            {
+                MessageBox.Show("CMND không được bỏ trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                textCMND.Focus();
+                return false;
+            }
             if (textPhone.Text.Trim() == "")
             {
                 MessageBox.Show("SĐT không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
